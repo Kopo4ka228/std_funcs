@@ -3,10 +3,10 @@
 
 int main()
 {
-    FILE* fp = fopen("example.txt", "r");
-    char s[50] = "123";
-    my_fgets(s, 50, fp);
-    puts(s);
+    char s[] = "mipt12345";
+    char* ptr = my_strdup(s);
+    puts(ptr);
+    free(ptr);
     return 0;
 }
 
